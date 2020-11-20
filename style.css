@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    text-align: center;
+}
+
+div:not(.menu) {
+    padding: 0 5%;
+}
+
+@media screen and (max-width: 600px){
+    .menu {
+        flex-direction: column;
+    }
+    div:not(.menu) {
+        width: 100%;
+        text-align: center;
+    }
+}
